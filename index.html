@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+    <meta charset="UTF-8">
+    <title>Tælleapparat v.2.0</title>
+    <!-- Meta Content -->
+    <meta name="description" content="Tælleapparat der kan lægge til og trække fra.">
+    <meta name="author" content="N4.DK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Info Text -->
+        <p id="text">SELECT VALUE AND<br>PUSH THE <b>ADD</b> OR<br><b>SUBTRACT</b> ICONS.</p>
+        <!-- Add and Subtract Buttons -->
+        <div>
+            <div id="add" onclick="add(); playAddSound();"><i class="fas fa-plus-square"></i></div>
+            <div id="subtract" onclick="subtract(); playSubtractSound();"><i class="fas fa-minus-square"></i></div>
+        </div>
+        <!-- Add Value -->
+        <select id="addValue" style="margin-right: 15px;">
+            <option value="1">+ 1</option>
+            <option value="2">+ 2</option>
+            <option value="5">+ 5</option>
+            <option value="10">+ 10</option>
+            <option value="50">+ 50</option>
+            <option value="100">+ 100</option>
+        </select>
+        <!-- Subtract Value -->
+        <select id="subtractValue">
+            <option value="-1">- 1</option>
+            <option value="-2">- 2</option>
+            <option value="-5">- 5</option>
+            <option value="-10">- 10</option>
+            <option value="-50">- 50</option>
+            <option value="-100">- 100</option>
+        </select>
+        <br>
+        <!-- Reset Button -->
+        <button id="reset" onclick="reset(); playResetSound()">RESET VALUE</button>
+    </div>
+    <!-- Total Value -->
+    <div id="total">0</div>
+    <!-- Leetielize -->
+    <div id="leet" onclick="leet(); playLeetSound();"><i class="fas fa-bomb"></i></div>
+    <!-- Sound Effects -->
+    <audio id="addSound">
+        <source src="addSound.ogg" type="audio/ogg">
+        <source src="addSound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="subtractSound">
+        <source src="subtractSound.ogg" type="audio/ogg">
+        <source src="subtractSound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="resetSound">
+        <source src="resetSound.ogg" type="audio/ogg">
+        <source src="resetSound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="leetSound">
+        <source src="leetSound.ogg" type="audio/ogg">
+        <source src="leetSound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

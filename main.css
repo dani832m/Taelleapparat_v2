@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(190, 190, 190);
+    padding: 15px;
+}
+p#text {
+    font: normal 22px Tahoma, sans-serif;
+    text-align: center;
+}
+div#wrapper {
+    margin: auto;
+    width: fit-content;
+}
+div#add {
+    font-size: 105px;
+    display: inline-flex;
+    margin-right: 15px;
+    cursor: pointer;
+}
+div#add:hover {
+    color: rgb(46, 46, 46);
+}
+div#subtract {
+    font-size: 105px;
+    display: inline-flex;
+    cursor: pointer;
+}
+div#subtract:hover {
+    color: rgb(46, 46, 46);
+}
+select {
+    width: 92px;
+    height: 45px;
+    color: rgb(0, 0, 0);
+    font: bold 18px Tahoma, sans-serif;
+    background-color: rgb(233, 233, 233);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    margin-top: 15px;
+}
+select:hover {
+    color: rgb(197, 197, 197);
+    background-color: rgb(0, 0, 0);
+}
+button#reset {
+    width: 202px;
+    height: 45px;
+    color: rgb(0, 0, 0);
+    font: bold 18px Tahoma, sans-serif;
+    background-color: rgb(233, 233, 233);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+button#reset:hover {
+    color: rgb(197, 197, 197);
+    background-color: rgb(0, 0, 0);
+}
+div#total {
+    margin: 40px auto 20px;
+    text-align: center;
+    font: bold 50px Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+div#leet {
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    cursor: pointer;
+}
+div#leet:hover {
+    color: rgb(168, 0, 0);
+}
