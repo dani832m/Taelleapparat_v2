@@ -71,22 +71,22 @@ function leet() {
     document.getElementById("total").innerHTML = total;
 }
 // Afspiller lyd, når der lægges til totalværdien.
-var addSound = document.getElementById("addSound"); 
+var addSound = document.getElementById("addSound");
 function playAddSound() {
-    addSound.play(); 
+    addSound.play();
 }
 // Afspiller lyd, når der trækkes fra totalværdien.
-var subtractSound = document.getElementById("subtractSound"); 
+var subtractSound = document.getElementById("subtractSound");
 function playSubtractSound() {
-    subtractSound.play(); 
+    subtractSound.play();
 }
 // Afspiller lyd, når totalværdien nulstilles.
-var resetSound = document.getElementById("resetSound"); 
+var resetSound = document.getElementById("resetSound");
 function playResetSound() {
-    resetSound.play(); 
+    resetSound.play();
 }
 // Afspiller lyd, når der klikkes på leet-ikonet.
-var leetSound = document.getElementById("leetSound"); 
+var leetSound = document.getElementById("leetSound");
 function playLeetSound() {
-    leetSound.play(); 
+    leetSound.play();
 }
