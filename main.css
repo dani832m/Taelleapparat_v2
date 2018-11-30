@@ -62,6 +62,11 @@ div#total {
     font: bold 50px Tahoma, sans-serif;
     color: rgb(0, 0, 0);
 }
+div#marioDance {
+    margin: auto;
+    width: 85px;
+    display: none;
+}
 div#leet {
     font-size: 40px;
     position: absolute;

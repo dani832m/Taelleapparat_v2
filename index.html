@@ -17,11 +17,11 @@
         <!-- Info Text -->
         <p id="text">SELECT VALUE AND<br>PUSH THE <b>ADD</b> OR<br><b>SUBTRACT</b> ICONS.</p>
         <!-- Buttons -->
-        <div>
+        <div id="iconWrapper">
             <div id="add" onclick="add(); playAddSound();"><i class="fas fa-plus-square"></i></div>
             <div id="subtract" onclick="subtract(); playSubtractSound();"><i class="fas fa-minus-square"></i></div>
         </div>
-        <!-- Add Value -->
+        <!-- Selector for Add Value -->
         <select id="addValue" style="margin-right: 15px;">
             <option value="1">+ 1</option>
             <option value="2">+ 2</option>
@@ -30,7 +30,7 @@
             <option value="50">+ 50</option>
             <option value="100">+ 100</option>
         </select>
-        <!-- Subtract Value -->
+        <!-- Selector for Subtract Value -->
         <select id="subtractValue">
             <option value="-1">- 1</option>
             <option value="-2">- 2</option>
@@ -45,9 +45,11 @@
     </div>
     <!-- Total Value -->
     <div id="total">0</div>
+    <!-- Mario GIF, hidden by default -->
+    <div id="marioDance"><img src="mario_gif.gif" alt="Do the Mario Dance!" width="85px" height="85px"></div>
     <!-- Leetielize -->
     <div id="leet" onclick="leet(); playLeetSound();"><i class="fas fa-bomb"></i></div>
-    <!-- Sound Effects -->
+    <!-- Sound Effects with HTML5 -->
     <audio id="addSound">
         <source src="sounds/addSound.ogg" type="audio/ogg">
         <source src="sounds/addSound.mp3" type="audio/mpeg">

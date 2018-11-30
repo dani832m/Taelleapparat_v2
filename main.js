@@ -65,11 +65,6 @@ function reset() {
     total = 0;
     document.getElementById("total").innerHTML = total;
 }
-// Let's go Leet.
-function leet() {
-    total = 1337;
-    document.getElementById("total").innerHTML = total;
-}
 // Afspiller lyd, når der lægges til totalværdien.
 var addSound = document.getElementById("addSound");
 function playAddSound() {
@@ -89,4 +84,12 @@ function playResetSound() {
 var leetSound = document.getElementById("leetSound");
 function playLeetSound() {
     leetSound.play();
+}
+// Let's go Leet with Super Mario.
+function leet() {
+    total = 1337;
+    document.getElementById("total").innerHTML = total;
+    document.getElementById("total").style.color = "rgb(168, 0, 0)";
+    document.getElementById("marioDance").style.display = "block";
+    document.body.style.backgroundImage = "url('mario_bg.png')";
 }
